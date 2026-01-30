@@ -90,8 +90,8 @@ lavalink:
       snapshot: false # set to true if you want to use snapshot builds.
     - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.8.1"
       snapshot: false # set to true if you want to use snapshot builds.
-    - dependency: "com.github.topi314.sponsorblock:sponsorblock-plugin:3.0.1"
-      snapshot: false # set to true if you want to use snapshot builds.
+    # - dependency: "com.github.topi314.sponsorblock:sponsorblock-plugin:3.0.1"
+    #   snapshot: false # set to true if you want to use snapshot builds.
     - dependency: "dev.lavalink.youtube:youtube-plugin:1.17.0"
       snapshot: false # set to true if you want to use snapshot builds.
   pluginsDir: './plugins'
@@ -141,6 +141,19 @@ lavalink:
 #      password: "your account password" # Password of Google account
 #    httpConfig: # Useful for blocking bad-actors from ip-grabbing your music node and attacking it, this way only the http proxy will be attacked
 #      proxyHost: "localhost" # Hostname of the proxy, (ip or domain)
+
+plugins:
+  sponsorblock:
+    enabled: false # Отключить полностью
+    # Или настроить категории для скипа:
+    # categories:
+    #   - sponsor # Спонсорские сегменты
+    #   # - selfpromo # Самореклама
+    #   # - interaction # Призывы к действию
+    #   # - intro # Интро
+    #   # - outro # Аутро
+    #   # - preview # Превью
+    #   # - music_offtopic # Не музыкальные части
 #      proxyPort: 3128 # Proxy port, 3128 is the default for squidProxy
 #      proxyUser: "" # Optional user for basic authentication fields, leave blank if you don't use basic auth
 #      proxyPassword: "" # Password for basic authentication
